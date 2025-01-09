@@ -7,11 +7,11 @@ export declare enum SalaNomeEnum {
     JUDA = "jud\u00E1"
 }
 export declare enum StatusIgrejaEnum {
-    COMUNGANTE = "comungante",
-    NAO_COMUNGANTE = "n\u00E3o comungante",
+    COMUNGANTES = "comungantes",
+    NAO_COMUNGANTES = "n\u00E3o comungantes",
     ROL_SEPARADO = "rol separado",
-    VISITANTE = "visitante",
-    EXCLUIDO = "exclu\u00EDdo"
+    VISITANTES = "visitantes",
+    EXCLUIDOS = "exclu\u00EDdos"
 }
 export declare enum StatusSalaEnum {
     ALUNO = "aluno",

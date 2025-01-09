@@ -12,11 +12,11 @@ var SalaNomeEnum;
 })(SalaNomeEnum || (exports.SalaNomeEnum = SalaNomeEnum = {}));
 var StatusIgrejaEnum;
 (function (StatusIgrejaEnum) {
-    StatusIgrejaEnum["COMUNGANTE"] = "comungante";
-    StatusIgrejaEnum["NAO_COMUNGANTE"] = "n\u00E3o comungante";
+    StatusIgrejaEnum["COMUNGANTES"] = "comungantes";
+    StatusIgrejaEnum["NAO_COMUNGANTES"] = "n\u00E3o comungantes";
     StatusIgrejaEnum["ROL_SEPARADO"] = "rol separado";
-    StatusIgrejaEnum["VISITANTE"] = "visitante";
-    StatusIgrejaEnum["EXCLUIDO"] = "exclu\u00EDdo";
+    StatusIgrejaEnum["VISITANTES"] = "visitantes";
+    StatusIgrejaEnum["EXCLUIDOS"] = "exclu\u00EDdos";
 })(StatusIgrejaEnum || (exports.StatusIgrejaEnum = StatusIgrejaEnum = {}));
 var StatusSalaEnum;
 (function (StatusSalaEnum) {

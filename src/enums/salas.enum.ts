@@ -8,11 +8,11 @@ export enum SalaNomeEnum {
 }
 
 export enum StatusIgrejaEnum {
-    COMUNGANTE = "comungante",
-    NAO_COMUNGANTE = "não comungante",
+    COMUNGANTES = "comungantes",
+    NAO_COMUNGANTES = "não comungantes",
     ROL_SEPARADO = "rol separado",
-    VISITANTE = "visitante",
-    EXCLUIDO = "excluído"
+    VISITANTES = "visitantes",
+    EXCLUIDOS = "excluídos"
 }
 
 export enum StatusSalaEnum {

@@ -1,30 +1,39 @@
-import { GeneroType, ResidenteType, SalaNomeType, StatusIgrejaType, StatusSalaType } from "../types/salas.type";
+import { GeneroType, ResidenteType, StatusIgrejaType } from "../types/igreja.type";
+import { SalaNomeType, StatusSalaType } from "../types/salas.type";
 import { Chamada } from "./chamada.interface";
+import { StatisticsHistory } from "./statistics.interface";
 
 export interface Salas {
     id: string;
     nome: SalaNomeType;
-    description: string;
+    descricao: string;
     faixaEtaria: string;
-    membros: Membros[];
-    estatiticas: {
-        total: number;
-        comungantes: number;
-        naoComungantes: number;
-        rolSeparado: number;
-        excluidos: number;
-        alunos: number;
-        professores: number;
-        visitantes: number;
-        nda: number;
-        masculinos: number;
-        femininos: number;
-        mediaIdade: number;
-        frequencia: number;
+    professores: SalaMembro[];
+    alunos: SalaMembro[];
+    estatisticas: {
+        igreja: {
+            comungantes: StatisticsHistory[];
+            naoComungantes: StatisticsHistory[];
+            separados: StatisticsHistory[];
+            excluidos: StatisticsHistory[];
+            visitantes: StatisticsHistory[];
+            total: StatisticsHistory[];
+        };
+        sala: {
+            alunos: StatisticsHistory[];
+            professores: StatisticsHistory[];
+            visitantes: StatisticsHistory[];
+            nda: StatisticsHistory[];
+            masculinos: StatisticsHistory[];
+            femininos: StatisticsHistory[];
+            mediaIdade: StatisticsHistory[];
+            frequencia: StatisticsHistory[];
+            total: StatisticsHistory[];
+        }
     }
 }
 
-export interface Membros {
+export interface SalaMembro {
     id: string;
     foto?: string;
     nome: string;
